@@ -1,6 +1,6 @@
 ---
 templateKey: "about-page"
-path: /o-mnie
+path: /about
 title: About our values
 ---
 
