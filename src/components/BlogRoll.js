@@ -8,8 +8,6 @@ class BlogRoll extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
-    console.log(posts);
-
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -49,7 +47,7 @@ class BlogRoll extends React.Component {
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
+                    Przeczytaj →
                   </Link>
                 </p>
               </article>
