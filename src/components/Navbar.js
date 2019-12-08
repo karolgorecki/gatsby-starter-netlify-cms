@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+// import github from "../img/github-icon.svg";
+import logo from "../kocie-logo.svg";
+import LogoKocie from "../LogoKocie";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -42,7 +43,8 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Koci Blog" style={{ width: "88px" }} />
+              <LogoKocie />
+              {/* <img src={logo} alt="Koci Blog" style={{ width: "88px" }} /> */}
             </Link>
             {/* Hamburger menu */}
             <div
@@ -60,8 +62,11 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
+              <Link className="navbar-item" to="/">
+                Strona Główna
+              </Link>
+              <Link className="navbar-item" to="/o-mnie">
+                O mnie
               </Link>
               {/* <Link className="navbar-item" to="/products">
                 Products
@@ -69,8 +74,8 @@ const Navbar = class extends React.Component {
               {/* <Link className="navbar-item" to="/blog">
                 Blog
               </Link> */}
-              <Link className="navbar-item" to="/contact">
-                Contact
+              <Link className="navbar-item" to="/kontakt">
+                Kontakt
               </Link>
               {/* <Link className="navbar-item" to="/contact/examples">
                 Form Examples
