@@ -46,9 +46,9 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
-      - file: "src/pages/o-mnie/index.md"
+      - file: "src/pages/omnie/index.md"
         label: "O mnie"
-        name: "o-mnie"
+        name: "omnie"
         fields:
           - {
               label: "Template Key",
