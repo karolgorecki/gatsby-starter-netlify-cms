@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
-import KocieLogo from "../LogoKocie";
+import KocieLogo from "./KocieLogo";
 
 const Footer = class extends React.Component {
   render() {
